@@ -35,7 +35,7 @@ export default function Header() {
                 }
                 key={href}
                 to={href}
-                end
+                end={href === '/'}
               >
                 {label}
               </NavLink>
@@ -89,7 +89,7 @@ export default function Header() {
               <NavLink
                 key={href}
                 to={href}
-                end
+                end={href === '/'}
                 className={({ isActive }) => (isActive ? 'is-current' : '')}
                 onClick={() => dialog.current?.close()}
               >

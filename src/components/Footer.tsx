@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
           <nav className="footer-navigation" aria-label="Πλοήγηση υποσέλιδου">
             {navigation.map(({ href, label }) => (
-              <NavLink to={href} end key={href}>
+              <NavLink to={href} end={href === '/'} key={href}>
                 {label}
               </NavLink>
             ))}
